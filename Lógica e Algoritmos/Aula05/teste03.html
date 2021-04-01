@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcular(){
+            var numero1 = parseInt(document.getElementById("primeiroNumero").value);
+            var numero2 = parseInt(document.getElementById("segundoNumero").value);
+            var numero3 = parseInt(document.getElementById("terceiroNumero").value);
+
+            
+                if(numero1 > numero2 && numero2 > numero3){
+                    document.write(nuemro1 + " " + numero2+ " " + numero3)
+                    }else if(numero1 > numero3 && numero3 > numero2){
+                        document.write(nuemro1 + " " + numero3 + " " + numero2)
+                        }else if(numero2 > numero3 && numero3 > numero1){
+                            document.write(numero2 + " " + numero3 + " " + numero1)
+                            }else if(numero2 > numero1 && numero1 > numero3){
+                                document.write(numero2 + " " + numero1 + " " + numero3)
+                                }else if(numero3 > numero2 && numero2 > numero1){
+                                    document.write(numero3 + " " + numero2 + " " + numero1)
+                                    }else{
+                                        document.write(numero3 + " " + numero1 +" "+ numero2)
+                                    }
+                                        
+                
+                
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="primeiroNumero" placeholder="Primeiro número">
+    <input type="number" id="segundoNumero" placeholder="Segundo número">
+    <input type="number" id="terceiroNumero" placeholder="terceiro número">
+
+    <button onclick="calcular()">Calcular</button>
+
+    
+</body>
+</html>

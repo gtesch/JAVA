@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcular(){
+            var numero1 = parseInt(document.getElementById("primeiroNumero").value);
+
+            document.write(numero1 + " x 1=" + (numero1*1) + "<br>")
+            document.write(numero1 + " x 2=" + (numero1*2) + "<br>")
+            document.write(numero1 + " x 3=" + (numero1*3) + "<br>")
+            document.write(numero1 + " x 4=" + (numero1*4) + "<br>")
+            document.write(numero1 + " x 5=" + (numero1*5) + "<br>")
+            document.write(numero1 + " x 6=" + (numero1*6) + "<br>")
+            document.write(numero1 + " x 7=" + (numero1*7) + "<br>")
+            document.write(numero1 + " x 8=" + (numero1*8) + "<br>")
+            document.write(numero1 + " x 9=" + (numero1*9) + "<br>")
+            document.write(numero1 + " x 10=" + (numero1*10))
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="primeiroNumero" placeholder="Primeiro número">
+    <button onclick="calcular()">Calcular</button>
+</body>
+</html>

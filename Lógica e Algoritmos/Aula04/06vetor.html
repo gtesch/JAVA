@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numero = [];
+        var nro10 = false
+
+
+    for(var indice =0; indice < 5; indice++){
+        numero[indice] = prompt("Informe o " +(indice+1) + " numero")
+    }
+
+    for(var indice =0; indice < 5; indice++){
+        if(numero[indice] == 10)
+        nro10 = true
+    }
+
+    if(nro10 == false){
+        docuemnt.write("Número 10 nao encontrado")
+    }
+
+    for(var indice =0; indice < 5; indice++){
+        if(numero[indice] == 10)
+        document.write("Numero 10, na posição: "+(indice+1) +"<br>"); 
+     }
+
+
+    
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

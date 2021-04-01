@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var nota1 = parseFloat(prompt("Qual a sua primeira nota: "));
+        var nota2 = parseFloat(prompt("Qual a sua segunda nota: "));
+        var nota3 = parseFloat(prompt("Qual a sua terceira nota: "));
+        var media;
+
+        document.write(("A sua primeira nota é ") + nota1);
+        document.write(("<br>A sua segunda nota é ") + nota2);
+        document.write(("<br>A sua terceira nota é ") + nota3);
+
+        media = ((nota1 + nota2 + nota3) / 3);
+
+        document.write(("<br>A sua média é ") + media);
+
+        if (media >= 7) {
+            document.write("<hr>Aprovado!")
+        }else {
+            document.write("<hr>Reprovado!")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

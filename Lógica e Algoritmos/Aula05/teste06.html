@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <script>
+       function calcular(){
+            var nota1 = parseInt(document.getElementById("primeiraNota").value);
+            var nota2 = parseInt(document.getElementById("segundaNota").value);
+            var nota3 = parseInt(document.getElementById("terceiraNota").value);
+
+            media = ((nota1 + nota2 + nota3) / 3)
+
+            if((nota1 + nota2 + nota3) / 3 >= 7){
+                document.write("Aprovado! <br> Com media " + media)
+            }else{
+                document.write("Reprovado! <br> Com media " + media)
+            }
+
+
+
+
+
+
+}
+   </script> 
+
+
+</head>
+<body>
+    <input type="number" id="primeiraNota" placeholder="Primeira nota">
+    <input type="number" id="segundaNota" placeholder="Segunda nota">
+    <input type="number" id="terceiraNota" placeholder="terceira nota">
+
+    <button onclick="calcular()">Calcular</button>
+
+</body>
+</html>

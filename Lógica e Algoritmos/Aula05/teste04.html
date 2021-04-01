@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 04</title>
+
+    <script>
+
+        function calcular(){
+
+            var numero1 = parseInt(document.getElementById("primeiroNumero").value);
+
+            var operacao = document.getElementById("operacao").value;
+
+            switch (operacao) {
+                case "Dolar" && "real":
+                    alert((numero1*5.8) + " Reais")
+                break;
+
+                case "Dolar" && "Libra":
+                    alert((numero1*0.72) + " Libras")
+                break;
+
+                case "Dolar" && "Euro":
+                    alert((numero1*0.84) + "Euros")
+                break;
+
+                case "Real" && "Dolar":
+                    alert((numero1*0.17) + " Dolares")
+                break;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input type="number" id="primeiroNumero" placeholder="Valor">
+
+    <select id="operacao">
+        <option>Euro</option>
+        <option>Dolar</option>
+        <option>Libra</option>
+        <option>Real</option>
+    </select>
+
+    <input type="number" onkeyup="calcular()">
+    
+
+    
+
+    <select id="operacao02">
+        <option>Euro</option>
+        <option>Dolar</option>
+        <option>Libra</option>
+        <option>Real</option>
+    </select>
+
+
+</body>
+</html>

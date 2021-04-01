@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function calcular(){
+
+            var produto = parseInt(document.getElementById("produto").value);
+            var valor = parseInt(document.getElementById("valor").value);
+            var forma = (document.getElementById("forma").value);
+
+            if(forma == "Avista" && valor >= 100){
+            alert("Desconto de 10%, total a pagar R$ " + (valor * 0.9));
+        }else{
+            alert("Pagamento integral de R$ " + valor);
+        }
+            
+
+
+
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <input type="text" id="produto" placeholder="Informe o produto">
+    <input type="number" id="valor" placeholder="Informe o valor">
+
+    <select id="forma">
+        <option>Avista</option>
+        <option>Aprazo</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+    
+</body>
+</html>
